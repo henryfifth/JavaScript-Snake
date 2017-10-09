@@ -11,11 +11,6 @@ Source code available here: https://github.com/henryfifth/JavaScript-Snake.git
 -->
   <title>JavaScript Snake</title>
   <link rel=stylesheet id=style type=text/css href=./css/main-snake.css />
-  <button onclick=getTheme()>Click to use this theme.</button>
-  <select id="select">
-    <option>Dark Theme</option>
-    <option>Revert To Original</option>
-  </select>
   <div id="mode-wrapper">Select which mode you would like to play in.
     <br />
     <button id="Easy">Easy</button>
@@ -25,20 +20,6 @@ Source code available here: https://github.com/henryfifth/JavaScript-Snake.git
     <button id="Difficult">Difficult</button>
   </div>
   <button id="high-score">Get your current high score for this game.</button>
-  <script>
-    function getTheme() {
-      function changeTheme(Theme) {
-        document.getElementById('style').setAttribute('href', Theme);
-      }
-      var index = document.getElementById("select").selectedIndex;
-      switch (index) {
-        case 0:
-          changeTheme('css/dark-snake.css');
-          break;
-        case 1: changeTheme('css/main-snake.css');
-      }
-    }
-  </script>
 </head>
 
 <body>
